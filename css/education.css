@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courgette', cursive;
+  
+}
+div{
+     border: 5px solid pink;
+/*    text-align: center;*/
+}
+.linebr{
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../rainbow.jpeg);
+    -webkit-text-fill-color : transparent;
+    -webkit-background-clip: text;
+    background-size: 1100px 600px;
+    animation: move 50s infinite linear reverse;
+}
+
+.icons{
+    position: relative;
+    top: 570px;
+}
+
+.fas,.far{
+    margin: 10px;
+    font-size: 60px;
+}
+hr{
+    width: 75%;
+    height: 5px;
+    background-color: pink;
+}
+.higher{
+ position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 240px;
+    font-size:12px;
+    text-align: center;
+}
+.lower{
+ position: absolute;
+    top:66%;
+    left: 56.2%;
+    transform: translateX(-50%);
+    width: 300px;
+     height: 240px;
+    font-size:12px;
+    text-align: center;
+}
+.middle{
+ position: absolute;
+    top: 66%;
+    left: 14.2%;
+    transform: translateX(-50%);
+    width: 300px;
+     height: 240px;
+    font-size:12px;
+    text-align: center;
+}
+.color1{
+    position: absolute;
+    top: 22%;
+    left: 3.2%;
+    height: 250px;
+    width: 250px;
+     background: url(../rainbow.jpeg);
+    -webkit-text-fill-color : transparent;
+    box-shadow: 0px 0px 10px 0px grey;
+    background-size: 700px 600px;
+    animation: move 50s infinite linear reverse;
+}
+.color2{
+    position: absolute;
+    top: 22%;
+    left: 47.4%;
+    height: 250px;
+    width: 250px;
+     background: url(../rainbow.jpeg);
+    -webkit-text-fill-color : transparent;
+    box-shadow: 0px 0px 10px 0px grey;
+    background-size: 700px 600px;
+    animation: move 50s infinite linear reverse;
+}
+.color3{
+    position: absolute;
+    top: 62%;
+    left: 25.5%;
+    height: 250px;
+    width: 250px;
+     background: url(../rainbow.jpeg);
+    -webkit-text-fill-color : transparent;
+    box-shadow: 0px 0px 10px 0px grey;
+    background-size: 700px 600px;
+    animation: move 50s infinite linear reverse;
+}
+
+.edu-content{
+    position: absolute;
+    top: 20%;
+    left: 72%;
+    width: 300px;
+    height: 500px;
+}
+@keyframes move{
+    100%{
+        background-position: 5000px 0;
+    }
+}
+
+
+
+
