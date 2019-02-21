@@ -1,54 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="css/style.css">
-<!--
- 
-  <script src="js/jquery.js"></script>
+<head>
+ <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+ <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+     <script src="js/jquery.magnific-popup.js"></script>
  <script src="js/typed.min.js"></script>
-    <script type="text/javascript">
-        var typed = new Typed('.developer', {
-          strings: ["Full Stack Developer", "Designer","Positive Vibes"],
-            loop: true,
-            typeSpeed: 30,
-            backSpeed:40,
-            backDelay: 1000
-        });
-         var typed = new Typed('.waiting', {
-          strings: ["Looking for a Developer Role", "Waiting for an Opportunity","Gathering Knowldge"],
-            loop: true,
-            typeSpeed: 30,
-            backSpeed:40,
-            backDelay: 1000
-        });
-    </script>
- 
- 
---> 
-<!--
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-   
-   
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-   
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"> 
--->
-   
     <meta charset="UTF-8">
     <title>Siva_Resume</title>
    
 </head>
 <body>
   <div class="container-video">
-        <a href="#videostory" class="button more" id="videolink" ><i class="fas fa-play" aria-hidden="true"> &nbsp;</i></a>
+        <a href="#videostory" class="button more" id="videolink" ><i class="fas fa-play" aria-hidden="true">&nbsp;</i></a>
         
         <div id="videostory" class="mfp-hide" style="max-width:75%; margin: 0 auto; ">
-        <video src="video/tree.mp4" width="850px" controls autoplay></video>
-            
+        <video src="video/tree.mp4" controls width="75%"></video>   
         </div>
     </div>
-  
-    <script>
+      <script>
         
         $('#videolink').magnificPopup({
             type: 'inline',
@@ -56,61 +27,82 @@
         })
                
     </script>   
- <div class="header">
+ <div class="header" id="home">
+   <div class="file"><a href="https://drive.google.com/file/d/0B5iXc1n3ACe_Uk41LVQxLVlDcV84Mk9jMzE5TDJxZUY5Y1h3/view?usp=sharing"><i class="far fa-file-pdf"></i> Resume</a></div>
     <div class="container" id="home">
-    <div class="content"><h1 class="profile"> Profile of a <span class="developer"></span></h1></div><div class="quoets"><p>" IF MY MIND CAN CONCEIVE IT AND MY HEART CAN BELEIVE IT THEN I CAN ACHIEVE IT "</p></div>
+    <div class="content"><h1 class="profile"> Profile of a <span class="developer" style="text-transform: uppercase"></span></h1></div><div class="quoets"><p>" IF MY MIND CAN CONCEIVE IT AND MY HEART CAN BELEIVE IT THEN I CAN ACHIEVE IT "</p></div>
+       <script type="text/javascript">
+        var typed = new Typed('.developer', {
+          strings: ["Full Stack Developer", "Designer","Workaholic"],
+            loop: true,
+            typeSpeed: 30,
+            backSpeed:40,
+            backDelay: 1000
+        });
+    </script>
     <div class="box">
         <div class="name"><h6>
             <span>S</span><span>i</span><span>v</span><span>a</span><span>r</span><span>a</span><span>m</span><span>a</span><span>k</span><span>r</span><span>i</span><span>s</span><span>h</span><span>n</span><span>a</span><span>n</span>
         </h6></div>
-        <div class="content"><p>Hardworking engineering graduate wanted be a part of the team in a dynamic work environment that will lead to a long term career relationship</p><br>
-        <span class="waiting"></span></div>
-    </div> 
-     </div>    
- </div>  
-<div class="navigate">
+        <div class="content"><h2>Hardworking engineering graduate wanted be a part of the team in a dynamic work environment that will lead to a long term career relationship. Currently <span class="waiting"></span></h2>
+        </div>
+    </div>
+      <script type="text/javascript">
+         var typed = new Typed('.waiting', {
+          strings: ["Looking for a Developer Role.", "Waiting for an Opportunity.","Gathering Knowledge daily."],
+            loop: true,
+            typeSpeed: 30,
+            backSpeed:40,
+            backDelay: 1000
+        });     
+    </script>  
+     </div> 
+<!--     <div id="particles-js"></div> -->
+ </div> 
+
+    <div class="navigate">
   <div class="container1">
         <div class="box">
             <div class="thump">
-                <img src="image/pexels-photo-1212408.jpeg" alt="">
+                <img src="image/android1.jpeg" alt="">
             </div>
             <div class="details">
-            <div class="content"><i>1</i>
+            <div class="content"><i class="fas fa-graduation-cap"></i>
                 <h3>Education Details</h3>
-                <a href="#">Read More</a></div>
+                <a href="#edu">Read More</a></div>
             </div>
         </div>
          <div class="box">
             <div class="thump">
-                <img src="image/pexels-photo-1212408.jpeg" alt="">
+                <img src="image/android1.jpeg" alt="">
             </div>
             <div class="details">
-            <div class="content"><i>1</i>
-                <h3>Certified Courses</h3> <a href="#">Read More</a></div>
+            <div class="content"><i class="fab fa-java"></i>
+                <h3>Certified Courses</h3> <a href="#coursed">Read More</a></div>
             </div>
         </div>
          <div class="box">
             <div class="thump">
-                <img src="image/pexels-photo-1212408.jpeg" alt="">
+                <img src="image/nature.jpeg" alt="">
             </div>
             <div class="details">
-            <div class="content"><i>1</i>
-                <h3>Website Projects</h3> <a href="#">Read More</a></div>
+            <div class="content"><i class="fas fa-brain"></i>
+                <h3>Website Projects</h3> <a href="#web">Read More</a></div>
             </div>
         </div>
          <div class="box">
             <div class="thump">
-                <img src="image/pexels-photo-1212408.jpeg" alt="">
+                <img src="image/nature.jpeg" alt="">
             </div>
             <div class="details">
-            <div class="content"><i>1</i>
-                <h3>About Me</h3> <a href="#">Read More</a></div>
+            <div class="content"><i class="far fa-smile-wink"></i>
+                <h3>About Me</h3> <a href="#about">Read More</a></div>
             </div>
         </div>
     </div>  
  </div>
-  
-     <div class="education-details">
+     
+    <div class="education-details" id="edu">
     
     <div class="linebr"><h1>Educational Details</h1></div>
 <section class="edu">
@@ -132,15 +124,16 @@
             <div class="color3"></div>
             
             <div class="edu-content">
-                <h1>Achivements in Campus</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sunt, cumque dolores, molestias corporis blanditiis reprehenderit deleniti et rem repudiandae veritatis hic id nihil minima veniam eligendi voluptatum voluptatibus, rerum incidunt? Delectus modi est aspernatur laborum adipisci sed amet consequatur?</p>
-            </div>
-            
+                <h1>Achivements in Campus</h1><p>Paper Presentaion- Use of Physics in Everyday Life <br>Achievement - 1 st prize | cash award – 1000 <br><br>SAE EFFICYCLE ’16, (National Level Technical Event, LPU Punjab) <br>Achievement - 25th Rank (National level) <br><br>Appreciation for 3rd Rank in academics Grade point – 8.9gpa</p>
+            </div>         
 </section>
-
     </div>
-    
-  <div class="course">      
-    <div class="certifications">
+       
+  <div class="course" id="coursed">      
+   
+   
+   
+   <div class="certifications">
        <h1>Certified Courses <br></h1>
    </div>
     
@@ -155,15 +148,16 @@ PLATFORM : Windows 10 | linux – bunsenlabs & Ubuntu 18.0</p>
     <p>Built a web based Bank Application to got a hands on practise in coding. This
 Application has many features like checking the balance, getting the Mini Statement and so on.
 Added to that created three different websites templates for different roles.<br>
-</p><br><p>Templates and source codes of these projects are pushed in the github repositaries with a README.</p>
+</p><br><p>Templates and source codes of these projects are pushed in the github repositaries for refference.</p>
 </div>  
-   </div> 
-<div class="website">
+   </div>  
+<div class="website" id="web">
+
 <div class="dev-content">
     <h1>Websites Developement Projects</h1></div>
   <div class="card middle">
       <div class="front">
-      <img src="image/pexels-photo-1212408.jpeg" alt="">
+      <img src="image/sandwich.jpeg" alt="">
       </div>
     <div class="back">
         <div class="back-content middle">
@@ -177,7 +171,7 @@ Added to that created three different websites templates for different roles.<br
   </div>
    <div class="card middle">
       <div class="front">
-      <img src="image/pexels-photo-1212408.jpeg" alt="">
+      <img src="image/pexels-photo-385998.jpeg" alt="">
       </div>
     <div class="back">
         <div class="back-content middle">
@@ -191,7 +185,7 @@ Added to that created three different websites templates for different roles.<br
   </div>
    <div class="card middle">
       <div class="front">
-      <img src="image/pexels-photo-1212408.jpeg" alt="">
+      <img src="image/pexels-photo-1851820.jpeg" alt="">
       </div>
     <div class="back">
         <div class="back-content middle">
@@ -205,7 +199,7 @@ Added to that created three different websites templates for different roles.<br
   </div>
    <div class="card middle">
       <div class="front">
-      <img src="image/pexels-photo-1212408.jpeg" alt="">
+      <img src="image/pexels-photo-1043506.jpeg" alt="">
       </div>
     <div class="back">
         <div class="back-content middle">
@@ -219,7 +213,7 @@ Added to that created three different websites templates for different roles.<br
   </div>
    <div class="card middle">
       <div class="front">
-      <img src="image/pexels-photo-1212408.jpeg" alt="">
+      <img src="image/pexels-photo-1432944.jpeg" alt="">
       </div>
     <div class="back">
         <div class="back-content middle">
@@ -233,7 +227,7 @@ Added to that created three different websites templates for different roles.<br
   </div>
    <div class="card middle">
       <div class="front">
-      <img src="image/pexels-photo-1212408.jpeg" alt="">
+      <img src="image/john-schnobrich-520019-unsplash.jpg" alt="">
       </div>
     <div class="back">
         <div class="back-content middle">
@@ -247,16 +241,12 @@ Added to that created three different websites templates for different roles.<br
   </div>
   <div class="dev-details">
       <h1>Complete Stacks Developed</h1>
-  </div>
+  </div><div id="particles-js"></div> 
 </div>
-     <div class="about_me">
-       <section>
-            <div class="icons">
-            <i class="fas fa-handshake"></i>
-            <i class="far fa-check-circle"></i>   
-            <i class="fas fa-award"></i>
-            </div>
-    </section>
+
+    
+    <div class="about">
+    <div class="about_me">
        <div class="image"></div>
         <div class="skills">
             <h6>
@@ -264,9 +254,42 @@ Added to that created three different websites templates for different roles.<br
         </div>
         <div class="contact_me">
            <div class="contact-details">
-               <h1>Want to know More Contact Me</h1><br><a href="" class="buttons">Contact Me</a>
+               <br><br><br><h1>ABOUT ME</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam dicta sequi iusto maxime nostrum blanditiis neque, provident tempore, cum quibusdam perspiciatis rem incidunt natus ducimus veritatis repudiandae magni corporis.</p><h1>Want to know More Contact Me</h1>
            </div>
         </div>    
     </div>
+    <a onclick="pop()" class="btn">Contact</a>
+  <div id="boxes">
+   <span class="far fa-check-circle"></span>   
+      <h1>Thank You</h1>
+        <p>contact me anytime by this number<br><i class="fas fa-mobile-alt"></i> +91 9994114052
+        <br><i class="fas fa-at"></i>  grsiva007@gmail.com <br>
+         Waiting Forward for your responce</p>
+      <a onclick="pop()" class="close">Close</a>
+      
+      <script type="text/javascript">
+      var c = 0;
+          function pop(){
+              if(c == 0){
+                  document.getElementById("boxes").style.display = "block";
+                  c = 1;
+              }else{
+                   document.getElementById("boxes").style.display = "none";
+                  c = 0;
+                  
+              }
+          }
+      
+      </script>
+      
+      
+  </div>  <div class="move-top"><a href="#home"><h1><i class="fas fa-arrow-circle-up"></i></h1></a></div>
+  </div>
+  
+
+  
+<script src="js/jquery.js" ></script>
+<script src="js/particles.min.js" ></script>
+<script src="js/app.js"></script>
 </body>
 </html>
