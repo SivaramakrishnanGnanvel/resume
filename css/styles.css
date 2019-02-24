@@ -213,8 +213,6 @@ width: 350px;
     font-size: 24px;
 }
 }
-
-/*     -----------------------------------------------------------      */
 .mfp-hide{
      display: none !important;
         
@@ -279,7 +277,8 @@ button.mfp-close{
     position: relative;
     width: 100%;
     height: 600px;
-    background: url(../image/magic.jpeg);
+    background: url(../image/stars.jpg);
+    animation: move 50s infinite linear reverse;
     background-size: cover;
 }
 
@@ -425,7 +424,7 @@ button.mfp-close{
         left: 0;
         width: 100%;
         height: 700px;
-    background: url(../image/android1.jpeg);
+    background: url(../image/stars.jpg);
     animation: move 50s infinite linear reverse;
     text-shadow: 0px 0px 10px white;
 }
@@ -727,7 +726,8 @@ hr{
 
 .course{
     position: relative;
-    background: url(../image/wooden.jpg);
+    background: url(../image/stars.jpg);
+    animation: move 50s infinite linear reverse;
     background-size: cover;
     height: 700px;
 }
@@ -752,6 +752,7 @@ hr{
 .course .certifications h1{
     font-size: 53px;
 }
+}
 @media(max-width: 900px){
     .course-details{
     top: 120px;
@@ -766,18 +767,17 @@ hr{
     color: white;
     font-size: 16px;
 }
-
 .course .certifications h1{
     font-size: 43px;
 }    
 }
 @media(max-width:690px){
-    .course-details{
+.course-details{
     background: rgba(0,0,0,.8);
     font-size: 14px;
     width: 35%;
 }
-    .course-content{
+.course-content{
     top: 180px;
     height: 230px;
     padding: 20px;
@@ -786,22 +786,16 @@ hr{
     font-size: 12px;
     width: 35%;
 }
-
 .course .certifications h1{
     font-size: 40px;    
 }
 }
-
-    
-@media(max-width:360px){ 
-}
-
 .website{
     position: relative;
     width: 100%;
     height: 900px;  
-    background: url(../image/garden.jpg);
-    background-size: cover;
+    background: url(../image/stars.jpg);
+    animation: move 50s infinite linear reverse;
     font-family: sans-serif;
 }
 .dev-content h1{
@@ -851,7 +845,6 @@ hr{
 .website .card:nth-child(3){
     left: 70%;
 }
-
 .website .card:nth-child(4){
     top: 80%;
     left: 20%;
@@ -864,18 +857,16 @@ hr{
     top: 80%;
     left: 70%;
 }
-
 .front, 
 .back{
   width: 100%;
   height: 100%;
-  border-radius: 20px;
-  box-shadow: 0,8px,0,#0099e6; 
+  border-radius: 20px;        
   overflow: hidden; 
   backface-visibility: hidden;
   position: absolute;
   transition: transform .6s linear;
-}
+}  
 .front img{
   opacity: 0.8;
 }
@@ -915,18 +906,24 @@ hr{
     transform: perspective(600px) rotateY(-180deg);
 }
 .card:hover .back{
-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
     
 }
-
-
+.fa-arrow-circle-up{
+    position: fixed;
+    bottom: 10%;
+    left: 90%;
+    font-size: 50px;
+    z-index: 5;
+    color: white;
+}
 @media(max-width:1200px){
   .website .card:nth-child(7){
-       top: 160px; 
-       width:200px;
-       height: 220px;
-       left: 15%;
-       transform: translateX(-25%);
+    top: 160px; 
+    width:200px;
+    height: 220px;
+    left: 15%;
+    transform: translateX(-25%);
 }
 .website .card:nth-child(2){
     top: 120px;
@@ -934,31 +931,31 @@ transform: perspective(600px) rotateY(0deg);
     transform: translateX(-50%);
 }
 .website .card:nth-child(3){
-   top: 160px;
+    top: 160px;
     left: 75%;
     width:200px ;
-       height: 220px;
-       transform: translateX(-25%);
+    height: 220px;
+    transform: translateX(-25%);
 }
 
 .website .card:nth-child(4){
     width:200px;
     top: 65%;
-       height: 220px;
-       left: 15%;
+    height: 220px;
+    left: 15%;
     transform: translate(-25%);
 }
 .website .card:nth-child(5){
     top: 60%;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
 }
 .website .card:nth-child(6){
-      width:200px ;
-       height: 220px;
+    width:200px ;
+    height: 220px;
     top: 65%;
     left: 75%;
-    transform: translateX(-25%)
+    transform: translateX(-25%);
 }
 }
 @media(max-width:900px){
@@ -980,7 +977,7 @@ transform: perspective(600px) rotateY(0deg);
     top: 120px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2
+    z-index: 2;
 }
 .website .card:nth-child(3){
     top: 160px;
@@ -990,7 +987,7 @@ transform: perspective(600px) rotateY(0deg);
     transform: translateX(-25%);
 }
 .website .card:nth-child(4){
-    width:200px ;
+    width:200px;
     top: 65%;
     height: 220px;
     left: 11.5%;
@@ -1003,7 +1000,7 @@ transform: perspective(600px) rotateY(0deg);
     z-index:2;
 }
 .website .card:nth-child(6){
-    width:200px ;
+    width:200px;
     height: 220px;
     top: 65%;
     left: 75%;
@@ -1048,11 +1045,11 @@ transform: perspective(600px) rotateY(0deg);
     width:200px ;
    height: 220px;
    transform: translateX(-25%);
-    z-index: 3
+    z-index: 3;
 }
 
 .website .card:nth-child(4){
-    width:200px ;
+    width:200px;
     top: 70%;
    height: 220px;
    left: 29%;
@@ -1064,14 +1061,14 @@ transform: perspective(600px) rotateY(0deg);
     left: 60%;
      width:200px ;
     height: 220px;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
 }
 .website .card:nth-child(6){
    width:200px ;
     height: 220px;
     top: 43%;
     left: 70%;
-    transform: translateX(-25%)
+    transform: translateX(-25%);
 }
 }
 .about{
@@ -1107,19 +1104,19 @@ transform: perspective(600px) rotateY(0deg);
 }
 .about_me .skills{
     position: absolute;
-    top: 30%;
-    left 50%;
+    top: 30%;    
+    left:50%;
     transform: translate(-50%,-50%);
     text-align: center;
     font-size: 3em;
 }
 .contact_me{
     position: absolute;
-    top: 52%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 800px;
-    height: 400px;
+    height: 450px;
     margin: 0;
     text-align: center;
     border: 3px solid pink;
@@ -1132,7 +1129,7 @@ transform: perspective(600px) rotateY(0deg);
 }
 .btn{
     position: absolute;
-    top: 70%;
+    top: 80.5%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: pink;
@@ -1200,7 +1197,7 @@ transform: perspective(600px) rotateY(0deg);
     .contact_me{
     top: 75%;
     font-size: 14px;
-    width: 450;
+    width: 450px;
 }
     .icons .fas,.far{
     margin: 30px;
@@ -1208,11 +1205,3 @@ transform: perspective(600px) rotateY(0deg);
 }
     
 }
-    .fa-arrow-circle-up{
-        position: fixed;
-        bottom: 10%;
-        left: 90%;
-        font-size: 50px;
-        z-index: 5;
-        color: white;
-    }
